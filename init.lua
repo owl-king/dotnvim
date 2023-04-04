@@ -412,6 +412,12 @@ local servers = {
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
+  pyright = {
+    python = {
+      venvPath = ".";
+      venv = ".venv";
+    }
+  },
 
   lua_ls = {
     Lua = {
@@ -495,3 +501,5 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+vim.opt.backup = false
+vim.opt.writebackup = false
